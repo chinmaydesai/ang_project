@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Project In Angular</title>
+	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.20/angular-ui-router.js"></script>
+	<script src = "project.js"></script>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" type="text/css" href="project.css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="row" ng-app="myApp">
+	<div class="col-md-3">
+	<aside>
+	    <ul>
+	        <li><span ui-sref='home' ui-sref-active="selected">  Home</span><span></span></li>
+	        <li><span ui-sref='student' ui-sref-active="selected">  Students</span><span></span></li>
+	        <li><span ui-sref='course' ui-sref-active="selected">  Courses</span><span></span></li>
+	    </ul>
+	</aside>
+	</div>
+	<div class="col-md-9">
+		<ui-view></ui-view>  <!-- this will load the different view -->
+	</div>
+</div>
+</body>
+</html>

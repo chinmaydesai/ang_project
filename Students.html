@@ -1,0 +1,22 @@
+<h2>List Of Students</h2>
+<!-- <ul>
+	<li ng-repeat="student in ctrl.studentsdet">
+		{{student.name}}{{student.id}}{{student.email}}
+	</li>
+</ul> -->
+<table border=1 class="table">
+	<thead>
+		<th>Id</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Mobile</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="student in ctrl.studentsdet">
+			<td>{{student.id}}</td>
+			<td>{{student.name}}</td>
+			<td>{{student.email}}</td>
+			<td>{{student.mobile}}</td>
+		</tr>
+	</tbody>
+</table>
